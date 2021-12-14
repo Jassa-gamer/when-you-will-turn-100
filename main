@@ -1,0 +1,23 @@
+# Create a program that asks the user to enter their name and their age.
+# Print out a message addressed to them that tells them the year that they will turn 100 years old.
+
+
+import time
+
+name = input("Enter the name: ")
+age = int(input("Enter the age in numbers: "))
+year =int(input("Enter the current year"))
+count = 0
+if age > 100 or year < 2000:
+    print("Please enter the age less than 100 and year greater than 2000")
+    exit()
+else:
+    a = "jassa gamer"
+
+while age < 100:
+    age = int(age) + 1
+    count = count + 1
+    year += 1
+print(name, "your will turn 100 in ", count, "years. in (", year, ")")
+
+time.sleep(4)
